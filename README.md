@@ -1,5 +1,6 @@
 # Face-Recognizing-Doorbell
-Raspberry Pi 4 camera detects known faces, sends a "[name] is at the door!" message to a smart speaker.
+Raspberry Pi 4 camera detects known faces, sends a "[name] is at the door!" message to a smart speaker. 
+*only works for Google Home at this time
 
 Adapted from carolinedunn's project. See hers for installing and setting up the required software, including OpenCV.
 
