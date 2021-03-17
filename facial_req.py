@@ -1,3 +1,4 @@
+#adapted from carolinedunn's project
 #! /usr/bin/python
 
 # ghome package, and connection
@@ -16,7 +17,8 @@ import pickle
 import time
 import cv2
 
-# initialize gap between detections
+# initialize gap between detections, # of seconds between detections, or undetected for # of seconds
+# prevents continuous messages from being sent to the smart speaker
 gap = 8
 
 #Initialize 'currentname' to trigger only when a new person is identified.
