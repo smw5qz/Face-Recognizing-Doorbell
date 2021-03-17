@@ -4,6 +4,10 @@ Raspberry Pi 4 camera detects known faces, sends a "[name] is at the door!" mess
 
 Adapted from carolinedunn's project. See hers for installing and setting up the required software, including OpenCV.
 
-This program creates a dictionary of known names, and alerts a smart speaker when one is detected, like a smart doorbell. Works for multiple known faces in the same frame. Will send another alert when the face goes undetected for a set amount of time, and is re-detected. The user controls this, is initialized to 8 seconds. 
+Headshots are taken for each person's face, and trained on before using them for live detection.
 
-This time between detects, and detection event booleans are captured in an array in the dictionary values, keys being the users' names.
+This program creates a dictionary of known names, and alerts a Google Home smart speaker when one is detected, like a smart doorbell. Works for multiple known faces in the same frame.
+
+The main problem that had to be solved was limiting the frequency the alert is sent, but allowing it to continue like when you press a doorbell again. I solved this by implementing an array of [detect1 (true/false), detect2 (true/false), timebetween1&2 (seconds)] as the value for each item in the dictionary. 
+
+The detection events 
